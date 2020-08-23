@@ -61,11 +61,9 @@ footer a {
   color: #ea5353; }
 
 .container {
-  max-width: 1250px;
   position: relative;
   background-color: #fafafa;
   padding: 4vw 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
