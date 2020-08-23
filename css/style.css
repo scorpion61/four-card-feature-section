@@ -111,6 +111,9 @@ footer {
     transition: transform .3s; }
     .features__card:hover {
       transform: scale(1.05) translateY(-1rem); }
+      @media only screen and (max-width: 56.25em) {
+        .features__card:hover {
+          transform: scale(1) translateY(0); } }
     .features__card__text {
       grid-column: 1 / -1;
       align-self: start;

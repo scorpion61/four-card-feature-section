@@ -33,6 +33,9 @@
 
 		&:hover {
 			transform: scale(1.05) translateY(-1rem);
+			@media only screen and (max-width: $medium) {
+				transform: scale(1) translateY(0);
+			}
 		}
 
 		&__text {
