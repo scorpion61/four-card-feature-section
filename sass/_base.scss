@@ -1,0 +1,42 @@
+// Font Variables
+$font-primary: 'Poppins', sans-serif;
+
+// Primary colors
+$color-red: hsl(0, 78%, 62%);
+$color-cyan: hsl(180, 62%, 55%);
+$color-orange: hsl(34, 97%, 64%);
+$color-blue: hsl(212, 86%, 64%);
+
+//Neutral colors
+$color-blue-dark: hsl(234, 12%, 34%);
+$color-grayish-blue: hsl(229, 6%, 66%);
+$color-grey-light: hsl(0, 0%, 98%);
+
+// Medi queries
+$medium: 56.25em; //900px
+$small: 28.125em; //450px
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // 10px/16px = 62.5%  -> 1rem = 10px;
+	@media only screen and (max-width: $medium) {
+		font-size: 56.25%;
+	}
+	@media only screen and (max-width: $small) {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: $font-primary;
+	font-size: 1.5rem;
+	background-color: $color-grayish-blue;
+}

@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 28.125em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  background-color: #a3a5ae; }
+
+.heading-1-light, .heading-1-dark {
+  font-size: 3.5rem;
+  color: #4c4e61; }
+  @media only screen and (max-width: 28.125em) {
+    .heading-1-light, .heading-1-dark {
+      font-size: 2.4rem; } }
+
+.paragraph__primary, .paragraph__secondary {
+  color: #4c4e61;
+  font-weight: 400; }
+
+.heading-1-light {
+  font-weight: 200; }
+
+.heading-1-dark {
+  font-weight: 600; }
+
+.heading-3 {
+  color: #4c4e61;
+  font-size: 1.6rem; }
+
+.mb-md {
+  margin-bottom: 2.5rem; }
+
+.mb-sm {
+  margin-bottom: 1rem; }
+
+.paragraph__primary {
+  max-width: 55ch; }
+
+.paragraph__secondary {
+  font-size: 1.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .paragraph__secondary {
+      margin-bottom: .5rem; } }
+
+footer a {
+  text-decoration: none;
+  color: #ea5353; }
+
+.container {
+  max-width: 1250px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 4vw 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: max-content repeat(2, 1fr); }
+
+footer {
+  align-self: center;
+  margin-top: 5vw; }
+
+.header {
+  justify-self: center;
+  text-align: center;
+  grid-column: 2 / 8;
+  margin-bottom: 4.5vw; }
+
+.features {
+  grid-column: 2 / 8;
+  grid-row: 2 / 4;
+  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    .features {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, max-content); } }
+  @media only screen and (max-width: 28.125em) {
+    .features {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, max-content);
+      grid-gap: 2.5rem; } }
+  .features__card {
+    min-height: 19rem;
+    padding: 2rem;
+    border-radius: .4rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-content: space-between;
+    transition: transform .3s; }
+    .features__card:hover {
+      transform: scale(1.05) translateY(-1rem); }
+    .features__card__text {
+      grid-column: 1 / -1;
+      align-self: start;
+      justify-self: start; }
+    .features__card__icon {
+      grid-column: 2 / -1;
+      align-self: end;
+      justify-self: end; }
+    .features__card-1 {
+      border-top: 3px solid #ea5353;
+      grid-column: 2 / 3;
+      grid-row: 1 / 3; }
+      @media only screen and (max-width: 56.25em) {
+        .features__card-1 {
+          grid-column: 1 / 2;
+          grid-row: 1 / span 2; } }
+      @media only screen and (max-width: 28.125em) {
+        .features__card-1 {
+          grid-column: 1 / -1;
+          grid-row: 3 / span 2; } }
+    .features__card-2 {
+      border-top: 3px solid #45d3d3;
+      grid-column: 1 / 2;
+      grid-row: 2 / 4; }
+      @media only screen and (max-width: 56.25em) {
+        .features__card-2 {
+          grid-column: 2 / 3;
+          grid-row: 1 / span 2; } }
+      @media only screen and (max-width: 28.125em) {
+        .features__card-2 {
+          grid-column: 1 / -1;
+          grid-row: 1 / span 2; } }
+    .features__card-3 {
+      border-top: 3px solid #549ef2;
+      grid-column: 3 / 4;
+      grid-row: 2 / 4; }
+      @media only screen and (max-width: 56.25em) {
+        .features__card-3 {
+          grid-column: 1 / 2;
+          grid-row: 3 / span 2; } }
+      @media only screen and (max-width: 28.125em) {
+        .features__card-3 {
+          grid-column: 1 / -1;
+          grid-row: 7 / span 2; } }
+    .features__card-4 {
+      border-top: 3px solid #fcaf4a;
+      grid-column: 2 / 3;
+      grid-row: 3 / 5; }
+      @media only screen and (max-width: 56.25em) {
+        .features__card-4 {
+          grid-column: 2 / 3;
+          grid-row: 3 / span 2; } }
+      @media only screen and (max-width: 28.125em) {
+        .features__card-4 {
+          grid-column: 1 / -1;
+          grid-row: 5 / span 2; } }

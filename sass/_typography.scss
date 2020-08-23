@@ -1,0 +1,55 @@
+%heading {
+	font-size: 3.5rem;
+	color: $color-blue-dark;
+
+	@media only screen and (max-width: $small) {
+		font-size: 2.4rem;
+	}
+}
+
+%paragraph {
+	color: $color-blue-dark;
+	font-weight: 400;
+}
+
+.heading-1-light {
+	@extend %heading;
+	font-weight: 200;
+}
+.heading-1-dark {
+	@extend %heading;
+	font-weight: 600;
+}
+
+.heading-3 {
+	color: $color-blue-dark;
+	font-size: 1.6rem;
+}
+
+.mb-md {
+	margin-bottom: 2.5rem;
+}
+.mb-sm {
+	margin-bottom: 1rem;
+}
+
+.paragraph {
+	&__primary {
+		@extend %paragraph;
+		max-width: 55ch;
+	}
+
+	&__secondary {
+		@extend %paragraph;
+		font-size: 1.2rem;
+
+		@media only screen and (max-width: $medium) {
+			margin-bottom: .5rem;
+		}
+	}
+}
+
+footer a {
+	text-decoration: none;
+	color: $color-red;
+}
