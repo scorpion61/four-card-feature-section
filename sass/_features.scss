@@ -4,9 +4,10 @@
 	padding: 2.5rem 0;
 
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(25rem, 32rem));
 	grid-template-rows: repeat(4, 1fr);
 	grid-gap: 3rem;
+	justify-self: center;
 
 	@media only screen and (max-width: $medium) {
 		grid-template-columns: 1fr 1fr;
@@ -17,14 +18,18 @@
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(8, max-content);
 		grid-gap: 2.5rem;
-		// align-items: center;
 	}
 
 	&__card {
-		min-height: 19rem;
+		background-color: #fff;
+		min-height: 18.5rem;
 		padding: 2rem;
 		border-radius: .4rem;
 		box-shadow: 0 1rem 2rem rgba(#000, .1);
+
+		@media only screen and (min-width: 1100px) {
+			min-height: 21rem;
+		}
 
 		display: grid;
 		grid-template-rows: 1fr 1fr;
